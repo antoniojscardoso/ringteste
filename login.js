@@ -7,7 +7,7 @@ function verificarLogin() {
     // Condição para verificar se o login e a senha estão corretos
     if (login === "usuario@ring.com.br" && senha === "senha123") {
         // Se estiverem corretos, redirecionar para o dashboard
-        window.location.href = "/HTML/dashboard.html";
+        window.location.href = "dashboard.html";
     } else {
         // Caso contrário, exibir uma mensagem de erro
         alert("Login ou senha incorretos. Tente novamente.");
