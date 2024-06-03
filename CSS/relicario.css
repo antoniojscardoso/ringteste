@@ -1,0 +1,19 @@
+body {
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+.container {  
+    display: grid;  
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);  
+}
+
+.container > img {  
+    width: 80%;  
+    height: 100%;
+    object-fit: cover;  
+}
+
