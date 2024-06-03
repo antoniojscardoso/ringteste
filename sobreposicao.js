@@ -1,5 +1,5 @@
 const overlay = document.getElementById('overlay');
-const gridItems = document.querySelectorAll('.grid');
+const gridItems = document.querySelectorAll('container');
 
 gridItems.forEach(item => {
   item.addEventListener('click', function() {
