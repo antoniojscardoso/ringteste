@@ -1,0 +1,55 @@
+body {
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.container {  
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.marca-dagua {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+}
+
+#imagem:hover {
+    /* Aumenta o tamanho da imagem em 20% quando o mouse passa por cima
+    .container {
+    position: relative;
+}
+
+.marca-dagua {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+}
+
+.imagens {
+    position: relative;
+}
+
+.imagem {
+    display: block; /* Garante que as imagens ocupem uma linha */
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+    transition: transform 0.3s ease;
+}
+
+.imagem:hover {
+    transform: scale(1.2);
+}
+ */
+    transform: scale(1.2);
+}
