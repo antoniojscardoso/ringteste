@@ -95,3 +95,8 @@ body {
     background-color: #ff0676;
 
 }
+
+.zdog-canvas {
+    background: #FDB;
+    cursor: move;
+  }

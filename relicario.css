@@ -34,25 +34,15 @@ body {
     transition: opacity 0.3s ease; /* Adiciona uma transição suave */
 }
 
-/* Classe para mostrar a marca d'água no fundo do grid */
-.marca-dagua.grid {
-    top: 0;
-    left: 0;
-}
-
-/* Classe para mostrar a marca d'água sobre a imagem */
-.marca-dagua.show {
-    opacity: 0.3; /* Torna a marca d'água visível */
-}
 /* Estilos para as imagens */
 .imagem {
     display: block;
-    width: 100%; /* As imagens ocupam 100% da largura do contêiner */
+    width: 50%; /* As imagens ocupam 100% da largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Borda arredondada */
     transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre a imagem */
 }
 
 .imagem:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
+    transform: scale(2.2); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
 }
