@@ -1,55 +1,58 @@
+/* Estilos para o corpo da página */
 body {
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Necessário para a marca d'água */
 }
 
-.container {  
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 10px;
-    gap: 10px 20px; /* row-gap column gap */
-    row-gap: 10px;
-    column-gap: 20px;
-}
-
-.marca-dagua {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
-}
-
-#imagem:hover {
-    /* Aumenta o tamanho da imagem em 20% quando o mouse passa por cima
-    .container {
-    position: relative;
+/* Estilos para o contêiner das imagens */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Define as colunas da grade responsiva */
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    position: relative; /* Necessário para a marca d'água */
 }
 
 .marca-dagua {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Define a largura da marca d'água como 100% do contêiner */
+    height: 100%; /* Define a altura da marca d'água como 100% do contêiner */
+    background-image: url('imagens/ring.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem no contêiner */
+    pointer-events: none; /* Para permitir que os eventos de toque/arraste passem pela marca d'água */
+    z-index: -1; /* Garante que a marca d'água fique atrás das imagens */
+    opacity: 0.6; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave */
 }
 
-.imagens {
-    position: relative;
+/* Classe para mostrar a marca d'água no fundo do grid */
+.marca-dagua.grid {
+    top: 0;
+    left: 0;
 }
 
+/* Classe para mostrar a marca d'água sobre a imagem */
+.marca-dagua.show {
+    opacity: 0.3; /* Torna a marca d'água visível */
+}
+/* Estilos para as imagens */
 .imagem {
-    display: block; /* Garante que as imagens ocupem uma linha */
-    width: 100px; /* Ajuste conforme necessário */
+    display: block;
+    width: 100%; /* As imagens ocupam 100% da largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaçamento entre as imagens */
-    transition: transform 0.3s ease;
+    border-radius: 8px; /* Borda arredondada */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre a imagem */
 }
 
 .imagem:hover {
-    transform: scale(1.2);
-}
- */
-    transform: scale(1.2);
+    transform: scale(1.1); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
 }
