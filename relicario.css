@@ -1,11 +1,17 @@
 /* Estilos para o corpo da página */
 body {
-    background: rgb(238, 174, 202);
-    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: rgb(153,92,80);
+    background: linear-gradient(90deg, rgba(153,92,80,1) 14%, rgba(71,167,71,1) 52%, rgba(34,43,83,1) 93%);
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative; /* Necessário para a marca d'água */
+    margin: 20px;
+    padding: 10;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para o contêiner das imagens */
@@ -18,20 +24,17 @@ body {
 }
 
 .marca-dagua {
-    position: absolute;
-    width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Define a largura da marca d'água como 100% do contêiner */
-    height: 100%; /* Define a altura da marca d'água como 100% do contêiner */
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
     background-image: url('imagens/ring.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
-    background-position: center; /* Centraliza a imagem no contêiner */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem na tela */
     pointer-events: none; /* Para permitir que os eventos de toque/arraste passem pela marca d'água */
     z-index: -1; /* Garante que a marca d'água fique atrás das imagens */
     opacity: 0.6; /* Inicialmente invisível */
-    transition: opacity 0.3s ease; /* Adiciona uma transição suave */
 }
 
 /* Estilos para as imagens */
@@ -46,3 +49,4 @@ body {
 .imagem:hover {
     transform: scale(2.2); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
 }
+
