@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
 /* Estilos para o corpo da página */
 body {
     background: rgb(153,92,80);
@@ -10,8 +13,14 @@ body {
 .cabecalho {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    font-family: "Marcellus", serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px 8px whitesmoke;
+    row-gap: 1px;
+    border-radius: 100%;
+    border-bottom: solid 3px whitesmoke;
+    background: linear-gradient(90deg, rgba(153,92,80,1) 14%, rgba(71,167,71,1) 52%, rgba(34,43,83,1) 93%);
 }
 
 /* Estilos para o contêiner das imagens */
