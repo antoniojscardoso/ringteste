@@ -14,6 +14,7 @@ body {
     font-family: "Marcellus", serif;
     font-size: xx-large;
     row-gap: 1px;
+    width: 100%;
     border-radius: 100%;
     border-color: #030A8C;
 }
@@ -21,7 +22,7 @@ body {
 .menu {
     display: block;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     top: 0px;
     width: 100%;
     height: auto;
@@ -54,7 +55,8 @@ body {
     li > a:hover {
       background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente ao passar o mouse */
     }
-
+  
+  
 
 /* Estilos para o contêiner das imagens */
 .container {
@@ -62,14 +64,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Define as colunas da grade responsiva */
     gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px; /* Espaçamento interno do contêiner */
-    margin-top: 300PX;
-    z-index: -1;
+    margin-top: 10px;
     position: relative; /* Necessário para a marca d'água */
+    
 }
 
 .marca-dagua {
     position: fixed;
-    top: 250PX;
+    top: 0;
     left: 0;
     width: 100vw; /* 100% da largura da viewport */
     height: 100vh; /* 100% da altura da viewport */
@@ -77,7 +79,7 @@ body {
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem na tela */
     pointer-events: none; /* Para permitir que os eventos de toque/arraste passem pela marca d'água */
-    z-index: -2; /* Garante que a marca d'água fique atrás das imagens */
+    z-index: -1; /* Garante que a marca d'água fique atrás das imagens */
     opacity: 0.6; /* Inicialmente invisível */
 }
 
