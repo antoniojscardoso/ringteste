@@ -17,9 +17,15 @@ body {
     border-color: #030A8C;
 }
 
+.container {
+  position: relative;
+  margin-top: 320px;
+  z-index: -1;
+}
 
 .container > div {  
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     font-family: "Marcellus", serif;
@@ -38,10 +44,31 @@ body {
     object-fit: cover;
 }
 
+.categoria {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
+    background-image: url('imagens/ring.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem na tela */
+    pointer-events: none; /* Para permitir que os eventos de toque/arraste passem pela marca d'água */
+    z-index: -1; /* Garante que a marca d'água fique atrás das imagens */
+    opacity: 0.6; /* Inicialmente invisível */
+}
 
 
-nav {
-    background-color: #333;
+
+.menu {
+  display: block;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  background-color: whitesmoke;
   }
   
   ul {
@@ -52,11 +79,16 @@ nav {
   
   li {
     display: inline-block;
+    background: linear-gradient(whitesmoke, whitesmoke) padding-box,
+    linear-gradient(to right, #c73850, #03521d, #1a1a8f) border-box;
+    border-radius: 8em;
+    border: 2px solid transparent;
+    margin: 10px;
   }
   
   li > a {
     display: block;
-    color: white;
+    color: rgb(185, 99, 84);
     padding: 10px 20px;
     text-decoration: none;
   }
