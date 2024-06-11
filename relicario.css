@@ -10,25 +10,28 @@ body {
 .title {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
     align-items: center;
     font-family: "Marcellus", serif;
-    font-size: xx-large;
-    row-gap: 1px;
-    width: 100%;
-    border-radius: 100%;
-    border-color: #030A8C;
+    font-size: large;
+    z-index: 2;
+    background-color: whitesmoke;  
 }
 
+
 .menu {
-    display: block;
-    justify-content: space-between;
-    position: relative;
-    top: 0px;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    background-color: whitesmoke;
-    }
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  background-color: whitesmoke;
+  }
     
     ul {
       list-style-type: none;
@@ -64,24 +67,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Define as colunas da grade responsiva */
     gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px; /* Espaçamento interno do contêiner */
-    margin-top: 10px;
+    margin-top: 250px;
     position: relative; /* Necessário para a marca d'água */
     
 }
 
-.marca-dagua {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* 100% da largura da viewport */
-    height: 100vh; /* 100% da altura da viewport */
-    background-image: url('imagens/ring.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem na tela */
-    pointer-events: none; /* Para permitir que os eventos de toque/arraste passem pela marca d'água */
-    z-index: -1; /* Garante que a marca d'água fique atrás das imagens */
-    opacity: 0.6; /* Inicialmente invisível */
-}
 
 /* Estilos para as imagens */
 .imagem {
