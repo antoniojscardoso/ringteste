@@ -67,7 +67,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Define as colunas da grade responsiva */
     gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px; /* Espaçamento interno do contêiner */
-    margin-top: 250px;
+    margin-top: 300px;
     position: relative; /* Necessário para a marca d'água */
     
 }
