@@ -71,16 +71,23 @@ body {
     
 }
 
+.container > div {
+  background: linear-gradient(whitesmoke, whitesmoke) padding-box,
+  linear-gradient(to right, #c73850, #03521d, #1a1a8f) border-box;
+  border-radius: 8em;
+  border: 2px solid transparent;
+}
+
 /* Estilos para as imagens */
 .imagem {
     display: block;
-    width: 50%; /* As imagens ocupam 100% da largura do contêiner */
+    width: 100%; /* As imagens ocupam 100% da largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Borda arredondada */
     transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre a imagem */
 }
 
 .imagem:hover {
-    transform: scale(2.5); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
+    transform: scale(1.5); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
 }
 
