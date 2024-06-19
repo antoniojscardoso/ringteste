@@ -88,12 +88,12 @@ body {
 .imagem {
     display: block;
     width: 80%; /* As imagens ocupam 100% da largura do contêiner */
-    height: 100%; /* Mantém a proporção da imagem */
+    height: 80%; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Borda arredondada */
     transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre a imagem */
 }
 
 .imagem:hover {
-    transform: scale(1.5); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
+    transform: scale(1.8); /* Aumenta ligeiramente a escala da imagem ao passar o mouse sobre ela */
 }
 
