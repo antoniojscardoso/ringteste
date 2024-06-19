@@ -96,6 +96,10 @@ body {
   }
   
   li > a:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente ao passar o mouse */
+    background: linear-gradient(to right, #c73850, #03521d, #1a1a8f);
+    border-radius: 8em;
+    color: whitesmoke;
+    
   }
+
 
